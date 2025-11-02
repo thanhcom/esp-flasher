@@ -24,3 +24,32 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* CSS cho nút và hiệu ứng */
+esp-web-install-button {
+    display: block;
+    width: 100%;
+    --ewt-button-background: theme('colors.blue.500');
+    --ewt-button-color: theme('colors.white');
+    --ewt-button-font-size: theme('fontSize.2xl'); 
+    --ewt-button-font-weight: 700; 
+    --ewt-button-padding-vertical: theme('spacing.5');
+    --ewt-button-border-radius: theme('borderRadius.xl');
+    --ewt-button-hover-background: theme('colors.blue.600');
+    --ewt-button-transition: all 0.2s ease-in-out;
+}
+
+@keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@layer utilities {
+    .animated-gradient-text {
+        @apply bg-clip-text text-transparent font-bold;
+        @apply bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-red-500;
+        background-size: 300% auto;
+        animation: gradient-flow 6s ease-in-out infinite;
+    }
+}
