@@ -13,7 +13,7 @@ export default async function HomePage() {
     <>
       <main className="flex-grow flex items-center justify-center p-4">
         <div className="bg-white p-10 rounded-2xl shadow-xl w-full max-w-md text-center space-y-6">
-          <h1 className="text-3xl font-bold text-gray-800">Tool nạp Firmware 🛠️</h1>
+          <h1 className="text-3xl font-bold text-gray-800">🛠️ Tool nạp Firmware Online 🛠️</h1>
           <p className="text-gray-600">Chọn phiên bản firmware và kết nối ESP32/ESP8266</p>
           
           <FlasherUI initialFirmwares={firmwares} />
