@@ -106,5 +106,3 @@ Thiết bị ESP32 hoặc ESP8266
 Nguyễn Danh Thành
 💡 IoT Developer — Tự động hóa & Hệ thống nhúng - www.thanhcom.site
 📧 Liên hệ: danhthanh89@gmail.com
-
-🧰 “Chỉ cần trình duyệt, bạn có thể nạp firmware cho ESP — tiện lợi như Tasmota Flasher, nhưng của chính bạn.”
