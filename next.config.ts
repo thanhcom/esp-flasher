@@ -1,16 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    turbo: true, // nếu dùng Turbopack
-  },
-  async rewrites() {
+  serverExternalPackages: ["xterm", "crypto-js", "web-serial-polyfill"], // chỉ JS packages
+  rewrites() {
     return [
       {
-        source: '/firmware/:version/:file*',     // URL client request
-        destination: '/:file*',                  // Next.js sẽ serve trực tiếp từ public/
+        source: '/firmware/:version/:file*',
+        destination: '/firmware/:version/:file*',
       },
     ];
   },
 };
-
 module.exports = nextConfig;
