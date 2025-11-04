@@ -270,6 +270,7 @@ export default function AdminPage() {
                 </div>
                 <div className="space-x-2 flex-shrink-0">
                   <button
+                  
                     onClick={() => handleEdit(fw.dirName)}
                     className="bg-yellow-500 text-white px-3 py-1 rounded-md hover:bg-yellow-600 text-sm font-medium transition-colors"
                   >

@@ -20,6 +20,7 @@ export async function POST() {
     return NextResponse.json(
       { success: false, message: err?.message || "Unknown error" },
       { status: 500 }
+      
     );
   }
 }
