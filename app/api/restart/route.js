@@ -3,7 +3,7 @@ import { exec } from "child_process";
 
 export async function POST() {
   try {
-    exec("pm2 restart igame", { cwd: "/app" }, (error, stdout, stderr) => {
+    exec("pm2 restart esp-flasher", { cwd: "/app" }, (error, stdout, stderr) => {
       if (error) {
         console.error("❌ Restart error:", error);
         return;

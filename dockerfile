@@ -35,7 +35,7 @@ COPY --from=builder /app/public ./public
 EXPOSE 3000
 
 # Tạo ecosystem file inline cho PM2
-RUN echo "module.exports = { apps: [{ name: 'igame', script: 'node_modules/next/dist/bin/next', args: 'start -p 3000', watch: false }] };" > ecosystem.config.js
+RUN echo "module.exports = { apps: [{ name: 'esp-flasher', script: 'node_modules/next/dist/bin/next', args: 'start -p 3000', watch: false }] };" > ecosystem.config.js
 
 # CMD chạy PM2 với ecosystem
 CMD ["pm2-runtime", "ecosystem.config.js"]
