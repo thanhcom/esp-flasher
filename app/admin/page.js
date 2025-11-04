@@ -157,7 +157,7 @@ export default function AdminPage() {
             onClick={handleRestart}
             className="px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition-colors"
           >
-            🔄 Restart app
+            🔄 Reload Hệ Thống
           </button>
           <Link
             href="/"
